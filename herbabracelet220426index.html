@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#b9ccb1",
+                    "inverse-surface": "#30312e",
+                    "secondary-fixed-dim": "#d5c4b1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#3b4b37",
+                    "secondary": "#695c4d",
+                    "primary": "#52634d",
+                    "on-background": "#1b1c19",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-tertiary-container": "#424848",
+                    "on-secondary-fixed-variant": "#504536",
+                    "surface-tint": "#52634d",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#eae8e3",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-tertiary-fixed": "#171d1d",
+                    "secondary-container": "#efddc9",
+                    "surface": "#fbf9f4",
+                    "on-secondary-container": "#6d6151",
+                    "surface-bright": "#fbf9f4",
+                    "tertiary-fixed-dim": "#c2c8c7",
+                    "outline": "#747871",
+                    "tertiary-container": "#b1b7b7",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#444841",
+                    "background": "#fbf9f4",
+                    "primary-container": "#a8bba1",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e4e2dd",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#231a0e",
+                    "primary-fixed-dim": "#b9ccb1",
+                    "on-primary-fixed": "#101f0e",
+                    "secondary-fixed": "#f1e0cc",
+                    "on-surface": "#1b1c19",
+                    "surface-container": "#f0eee9",
+                    "on-primary-fixed-variant": "#3b4b37",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-dim": "#dbdad5",
+                    "tertiary": "#595f5f",
+                    "outline-variant": "#c4c8bf",
+                    "tertiary-fixed": "#dee4e3",
+                    "on-tertiary-fixed-variant": "#424848",
+                    "primary-fixed": "#d5e8cc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .glass-nav {
+            background-color: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .text-chinese-title { font-family: 'Noto Serif SC', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-serif italic text-primary">Ethereal Pavilion</div>
+<div class="hidden md:flex items-center gap-8 text-[#695c4d]">
+<a class="hover:text-primary transition-colors" href="#craftsmanship">Craftsmanship</a>
+<a class="hover:text-primary transition-colors" href="#ingredients">Ingredients</a>
+<a class="hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-primary transition-colors" href="#faq">FAQ</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-sm tracking-wide hover:opacity-80 transition-opacity inline-block text-center" href="https://wa.link/1wsudh" target="_blank">
+                Shop Now
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="inline-block px-3 py-1 bg-primary-container text-on-primary-container text-xs rounded-full mb-6 font-label tracking-widest uppercase">Ancient Wisdom • Modern Scent</span>
+<h1 class="text-5xl md:text-7xl text-on-surface leading-tight text-chinese-title mb-6">
+                    藏在手腕里的<br/><span class="text-primary italic">“草本香”</span>，这也太好闻了！🌿
+                </h1>
+<p class="text-lg text-secondary max-w-lg mb-10 leading-relaxed font-body">
+                    拒绝廉价香水味！大马首款「穿戴式」安神方，100%纯天然药材手工研磨，让你在忙碌的喧嚣中，随手一抬，便是静谧山野。
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full text-lg font-bold hover:scale-95 transition-transform duration-300 inline-block text-center" href="https://wa.link/1wsudh" target="_blank">
+                        “Walao 真的很香！我要下单”
+                    </a>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[600px] flex items-center justify-end">
+<div class="absolute inset-0 bg-primary-container/20 rounded-full blur-[120px] -z-10"></div>
+<img class="w-full h-[500px] object-cover rounded-xl shadow-2xl z-0 transform translate-x-12" data-alt="close up of an elegant woman's wrist wearing a handcrafted wooden herbal bracelet in a misty zen tea house setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa0S_dm01xapcg2aKf4gF8RpNgRAbLR4upCTyBiPbq7oP5HIX55KuH9jZfrAXdCBa4onLMVywtDLmZPdSbWR2OTNvDjhjmBGnl-eVyazwvFfwPqOM-exxHR08ZDjrD-ejD9Hqhk-phJ2OQwYdi4NDL-gOXH6Hmw1tYHPLpfctz6DLkohK8G4CnTFChS0zJIsD9ymG9Y600Z23O3rFI8Dv3YmOdt1FDEr3em8LsPdh2Kz53SaqRI1ee_0GJJ_PDk6O5Y35Ez444H8I"/>
+<div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-high rounded-xl max-w-xs shadow-xl border border-outline-variant/15">
+<p class="text-primary font-serif italic text-xl">“每一颗珠子，都封存了一座森林的宁静。”</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl mb-4">当你被世界的喧嚣紧紧包围</h2>
+<div class="w-24 h-1 bg-primary mx-auto opacity-30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="p-10 bg-surface rounded-xl flex flex-col gap-4 text-center group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary">work_history</span>
+<h3 class="text-xl font-bold group-hover:text-on-primary">高压时刻</h3>
+<p class="text-secondary group-hover:text-on-primary/80">在无尽的会议与邮件中，紧绷的心弦难以放松。</p>
+</div>
+<div class="p-10 bg-surface rounded-xl flex flex-col gap-4 text-center group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary">thermostat</span>
+<h3 class="text-xl font-bold group-hover:text-on-primary">闷热难耐</h3>
+<p class="text-secondary group-hover:text-on-primary/80">大马午后的燥热，让心情也变得格外浮躁难安。</p>
+</div>
+<div class="p-10 bg-surface rounded-xl flex flex-col gap-4 text-center group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary">science</span>
+<h3 class="text-xl font-bold group-hover:text-on-primary">化工刺鼻</h3>
+<p class="text-secondary group-hover:text-on-primary/80">受够了廉价香精的工业感？你需要大自然的呼吸。</p>
+</div>
+<div class="p-10 bg-surface rounded-xl flex flex-col gap-4 text-center group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary">bedtime</span>
+<h3 class="text-xl font-bold group-hover:text-on-primary">辗转反侧</h3>
+<p class="text-secondary group-hover:text-on-primary/80">深夜的静谧，往往伴随着无法入眠的焦虑。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution & Authority -->
+<section class="py-24" id="craftsmanship">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+<img class="w-full h-80 object-cover rounded-xl mt-12" data-alt="macro close-up of dark sandalwood beads showing intricate natural wood grain and texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBStv1kk92ATAlYymOAOyNfupQVb3RVa7YP0tmmGMwEiUJ8uO4GjYRy1sWMz-WkVLEC4Kae6QFzI-pSNnVYuztZadphTVEsK08nfRucpzccFpuw5VvpxGA55i-dRq84eutAh2V1oQZE72sdvZvW6K7PVrRBEm-vLaY1ZLkFtY4KPSoQl15KZspE_i7eT_bALAskMPAKZxcG9RdWW_HAwQpRrYIO1IRELGs7AwDuwHhhTVedcISOlydjy7avDU4JMMfapdDBo3_iXco"/>
+<img class="w-full h-80 object-cover rounded-xl" data-alt="raw medicinal herbs like angelica root and sandalwood chips arranged artistically on a stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYpFOiFEZ_USIR_p0R86PdLT9dWR62cVjZRUkgNQIbHCWmk9CXLKAb9S-DwzzKw4J1AsO08jEThtZfiu_AcTb18L3ld7smjfyXb42OUBTEGubAPl02-6BfcQM16zSZ5llVuxhxtaY8jw5hwQST1yBgipVEb-42Do4XJKex1wA1c2Lb8WwcU2LkSjMVEOLJW0nFfo50EDzLm7esCzZQWpFj1o45BpfsvMERUz3wAt22q8OaerXD1-PUoEtZymBZaqUHvPxrSNMAJ8w"/>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl mb-8 leading-tight">以自然之名<br/>重塑感官边界</h2>
+<ul class="space-y-8">
+<li class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary font-bold">01</div>
+<div>
+<h4 class="text-xl font-bold mb-2">顶级原材 · 慢调研磨</h4>
+<p class="text-secondary">选用珍稀老料檀香、当归等名贵药材，遵循古法炮制，锁住每一丝草本精魂。</p>
+</div>
+</li>
+<li class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary font-bold">02</div>
+<div>
+<h4 class="text-xl font-bold mb-2">舒缓助眠 · 安抚心神</h4>
+<p class="text-secondary">无需点火燃烧，佩戴即散香。通过嗅觉调理神经，带你进入沉浸式的好眠。</p>
+</div>
+</li>
+<li class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary font-bold">03</div>
+<div>
+<h4 class="text-xl font-bold mb-2">新中式美学 · 简约不凡</h4>
+<p class="text-secondary">去繁就简的设计。它是配饰，更是你的随身“静心亭”。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof (Xiaohongshu Style) -->
+<section class="py-24 bg-surface-container-high" id="reviews">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest">TESTIMONIALS</span>
+<h2 class="text-4xl mt-2">谁在佩戴 Ethereal Pavilion？</h2>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<!-- Card 1 -->
+<div class="break-inside-avoid bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<img class="w-full h-48 object-cover rounded-lg mb-4" data-alt="atmospheric photo of a person's hand holding a tea cup in a sunlit garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVn1lNpM3DkFgs593fF4SKLp1oBWtqex3wVIulT1DgPyHHfjb-An490Gz6jVN-UUV7fimyV1JQYNhl4L-gvGWrHSk8X6AmJg92D73qEBilAZ4ilvf29CLH8wEEeugR0xPYGMElog9RksRt5H3PTLKz5HzP62NxeYvF5r_DAYJQTc87-rpHG070PvVKGCTzsNfBVWRivb5yAfA7_kFTpztylvd7C7E_8AXdWy2HZajn8St8qRFmwBjlOJcBmEeW4WVHQ_pzKEnNStA"/>
+<p class="text-on-surface leading-relaxed mb-4">“原本只是觉得好看，结果戴上后真的停不下来，味道太治愈了，<span class="font-bold text-primary italic">Ngam到爆！</span>”</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">A</div>
+<div class="text-sm">
+<p class="font-bold">User A</p>
+<p class="text-xs text-secondary">Verified Buyer from KL</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="break-inside-avoid bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<p class="text-on-surface leading-relaxed mb-4 text-lg italic">“同事都问我擦了什么香水，这种草本香真的很清流，爱了爱了。”</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">B</div>
+<div class="text-sm">
+<p class="font-bold">User B</p>
+<p class="text-xs text-secondary">Creative Director</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="break-inside-avoid bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<img class="w-full h-64 object-cover rounded-lg mb-4" data-alt="serene morning sunlight hitting a minimalist workspace with a small plant and wooden elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2vk8Pt5K_1Db12JGJRHatuHWDGZA6ypJ0SGl19SzNrPsKqaYGSC7BadtzGnNAB7lLgf_AdFRk9g_7Cy1fsa0NKTBeFdzM2zAksD0UqWLbV4ySM47IE7ke12yW0FElTlQd1rUjt7wvCW87e7xuCpveylCdNsqZRfmDwDsedkG6qIEAdsqg4FNmRrwmLOm50F6cSNRcRxK_64VJTr_FUxdEuM3GiR4DMUpR_35nVkwNEq7hoQdYHbQpOb0Cj4nBiBV5NzIr5FZJ5Sk"/>
+<p class="text-on-surface leading-relaxed mb-4">“戴着它办公真的能静下心来，不再那么焦虑了。”</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold">S</div>
+<div class="text-sm">
+<p class="font-bold">Sarah L.</p>
+<p class="text-xs text-secondary">Remote Professional</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Offer & Urgency -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col md:flex-row shadow-2xl">
+<div class="md:w-1/2 relative h-96 md:h-auto">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="luxury packaging of the herbal bracelet including a linen pouch and elegant box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClkZKpQIoo9bGeTMmQHiGnbOo3tuRsOAQ4m8alHfP1qMCb7dC3eHCv3j78B-SVREP1wPVbPjTNI6ArqeU3Xi9TENmVkHK8sU11Gq9NXwQNyLtxsxH5gCUFUidN6DicjGbeqRsC-N1SUN3P4L1U_3b6J1QlkIn5rJdxmHBkBjmijytADKXWYDg-N1ms4ReiUxsWabNGCA0DK1c57DiD639s9xwIMV3IEg4S0s37i-a4uZqx8J3etc5VbNL0PmEgdJw6LLUxOiZU_LM"/>
+</div>
+<div class="md:w-1/2 p-12 flex flex-col justify-center">
+<div class="mb-6 flex items-center gap-4 text-error font-bold animate-pulse">
+<span class="material-symbols-outlined">local_fire_department</span>
+<span>Only 27 pieces left in this batch!</span>
+</div>
+<h2 class="text-4xl mb-4">专属治愈礼盒</h2>
+<div class="space-y-3 mb-8 text-secondary">
+<div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+<span>Herbal Bracelet</span>
+<span>RM299</span>
+</div>
+<div class="flex justify-between items-center pb-2 border-b border-outline-variant/30">
+<span>Dust-proof Linen Pouch</span>
+<span>FREE</span>
+</div>
+<div class="flex justify-between items-center pt-4 text-on-surface">
+<span class="text-lg">Special Offer Price</span>
+<span class="text-3xl font-bold text-primary">RM191</span>
+</div>
+<p class="text-xs text-right opacity-60">Save 50% Off Retail</p>
+</div>
+<a class="w-full bg-primary text-on-primary py-5 rounded-full text-xl font-bold hover:scale-[1.02] active:scale-95 transition-all inline-block text-center" href="https://wa.link/1wsudh" target="_blank">
+                    立即抢购，开启治愈时刻
+                </a>
+<div class="mt-6 flex justify-center gap-6 opacity-40 grayscale">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="material-symbols-outlined">payment</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-24 bg-surface" id="faq">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="text-3xl text-center mb-16">常见问题解答</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-low rounded-xl" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">孕妇或小孩可以佩戴吗？</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-secondary leading-relaxed">
+                        由于配方中含有当归、檀香等纯天然药材，虽然性质温和，但针对孕早期或对中药高度敏感者，建议咨询医师。通常情况下，成人及学龄后儿童佩戴非常安全。
+                    </div>
+</details>
+<details class="group bg-surface-container-low rounded-xl">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">香味可以维持多久？</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-secondary leading-relaxed">
+                        在正常佩戴情况下，核心香味可维持 3-6 个月。不佩戴时建议放入我们赠送的密封麻布袋中，能有效延长香气寿命。
+                    </div>
+</details>
+<details class="group bg-surface-container-low rounded-xl">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">西马/东马运费及配送时间？</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-secondary leading-relaxed">
+                        西马地区通常 2-4 个工作日送达，东马地区 5-7 个工作日。我们统一使用合作快递，确保每一份宁静都能安全送达您手中。
+                    </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 mt-24 bg-surface-container-low text-center flex flex-col items-center gap-8">
+<div class="font-serif text-primary text-2xl tracking-widest">THE ETHEREAL PAVILION</div>
+<div class="flex flex-wrap justify-center gap-8 font-label text-sm text-secondary">
+<a class="hover:text-primary" href="#">Safety Guide</a>
+<a class="hover:text-primary" href="#">Longevity Care</a>
+<a class="hover:text-primary" href="#">Shipping Policy</a>
+<a class="hover:text-primary" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 px-6 py-3 bg-secondary-container text-on-secondary-container rounded-full hover:opacity-80 transition-opacity" href="https://wa.link/1wsudh" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                WhatsApp Support
+            </a>
+</div>
+<p class="text-secondary opacity-60 text-xs">© 2024 The Ethereal Pavilion. Handcrafted Tranquility.</p>
+</footer>
+<a aria-label="Chat with us on WhatsApp" class="fixed bottom-8 right-8 z-50 flex items-center gap-2 bg-primary text-on-primary px-6 py-4 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 group" href="https://wa.link/1wsudh" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-bold">Chat with Us</span>
+</a></body></html>
